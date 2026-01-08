@@ -113,7 +113,7 @@ export default function RoomDetail() {
             />
 
             {/* Gallery dialog */}
-            <Dialog open={openGallery} onClose={() => setOpenGallery(false)} maxWidth="lg" fullWidth>
+            <Dialog open={openGallery} onClose={() => setOpenGallery(false)} maxWidth="lg" fullWidth disableScrollLock>
               <DialogContent sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', justifyContent: 'center' }}>
                 {(room.images || []).map((img, i) => (
                   <Box
